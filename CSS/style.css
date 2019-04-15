@@ -40,8 +40,8 @@ code {
 }
 
 .caption {
-    width: 50%;
     font-style: italic;
+    text-align: center
 }
 
 #most_important {
