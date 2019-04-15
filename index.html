@@ -32,29 +32,59 @@
             <div class='tableauPlaceholder' id='viz1554990574707' style='margin: auto; padding: 10px; width: 60%; height: 60%; position: relative; overflow: hidden; display: block;'><noscript><a href='#'><img alt='A graph of the 100%s by year and gross' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ro&#47;RottenTomatoes_15549664414210&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='margin: auto; padding: 10px; width: 60%; height: 761.2px; position: relative; overflow: hidden; display: block;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RottenTomatoes_15549664414210&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ro&#47;RottenTomatoes_15549664414210&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1554990574707');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
             <p class="caption">Note: The graph is capable of being sorted by price, and able to filter out years by clicking the headings</p>
 
+            <p class='container'>
+                One of the key elements of data collected from the Rotten Tomatoes data set is the Box Office Gross of many of the films within. When shown alongside release year, it’s rapidly apparent that the general trend for the films in the list to remain in the same general gross bracket of under $10M, though there are clearly several exceptions to this, in addition to the large volume of data that lacks gross values. Overall, however, only five films broke $100M, and two of them are from the same franchise. 
+                <br>
+                <br>
+                From this trend, we can gather draw several possible conclusions and hypothesize about the reasons behind them. 
+                <br>
+                <br>
+                First and foremost, the films that tend to get consistently high reviews from the critics are cult/indie films, classics, and documentaries.  This is likely a result of the sheer overwhelming number of reviews many of the more popular films listed get, which tends to guarantee a handful of naysayers to bring the score down from the perfect 100%.
+                <br>
+                <br>
+                Another observation of note is that, despite the general inflation of USD, the general gross has remained largely the same. A trend like this could have many possible explanations, ranging from tying in to the hypothesis from the first observation of the review quantity to the idea that the bar may be lower for films that gross less, as the critics may have had lower expectations going in. 
+                <br>
+                <br>
+                A final observation of note is that the films that broke $50M were from a wide range of decades, which shows that the gross and decades are even more unrelated. It’s very possible that a handful of the older films like Pinocchio made much of their money over the decades that followed through the various other avenues of purchase, but for the most part the films listed didn’t have the status of “Classic” that such a film provides. This, in turn, means that a greater breakdown into trends regarding films across decades is needed, which will be discussed later on in the article.
+                <br>
+                <br>
+                The largest issue with this portion of the dataset is the lack of full information: many of the films have little-to-no box office data, and, as such, may skew the graph. In order to still allow the films to appear on the timeline, they were given supplementary values of $1.00. 
+            </p>
+
         </div>
         <div id="decade">
             <h2>Decade</h2>
             <iframe src="JenaGraphs/decade-piechart.html" style='margin: auto; padding: 10px; width: 60%; height: 60%; position: relative; overflow: hidden; display: block;' alt='A graph percentage of film based on decade'></iframe>
+            <p class='container'>
 
+            </p>
         </div>
         <div id="countries">
             <h2>Countries</h2>
             <div class='tableauPlaceholder' id='viz1554860542552' style='margin: auto; padding: 10px; width: 60%; height: 60%; position: relative; overflow: hidden; display: block;    '><noscript><a href='#'><img alt='a Pie Graph of the 100%s by their country of origin' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ro&#47;Rottentomatoesproject&#47;Sheet3&#47;1_rss.png' style='margin: auto; padding: 10px; width: 60%; height: 60%; position: relative; overflow: hidden; display: block;' /></a></noscript><object class='tableauViz'  style='margin: auto; padding: 10px; width: 60%; height: 60%; position: relative; overflow: hidden; display: block;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Rottentomatoesproject&#47;Sheet3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ro&#47;Rottentomatoesproject&#47;Sheet3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1554860542552');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <p class='container'>
 
+            </p>
         </div>
         <div id="gender">
             <h2>Gender</h2>
             <iframe src="JenaGraphs/actors-bar.html" style='margin: auto; padding: 10px; width: 60%; height: 60%; position: relative; overflow: hidden; display: block;' alt="A bar graph comparing the number of films with male lead actors to the number of films with female leads"></iframe>
+            <p class='container'>
 
-            
+            </p>
         </div>
         <div id="director">
             <h2>Director</h2>
             <iframe src="JenaGraphs/mvsf-bar.html" style='margin: auto; padding: 10px; width: 60%; height: 60%; position: relative; overflow: hidden; display: block;' alt="A bar graph comparing the number of films with male directors to the number of films with female leads"></iframe>
+            <p class='container'>
+
+            </p>
         </div>
         <div id="conclusion">
             <h2>Conclusion</h2>
+            <p class='container'>
+                
+            </p>
         </div>
         <div id='footer'>
             <h2>Sources:</h2>
